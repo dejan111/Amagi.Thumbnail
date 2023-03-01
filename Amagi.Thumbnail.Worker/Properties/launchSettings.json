@@ -1,0 +1,14 @@
+﻿{
+  "ConnectionStrings": {
+    "Default": "Server=localhost;Database=Amagi;Trusted_Connection=True;Encrypt=False;"
+  },
+  "profiles": {
+    "Amagi.Thumbnail.Worker": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}

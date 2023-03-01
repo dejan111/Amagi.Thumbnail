@@ -1,0 +1,27 @@
+﻿# Default production dockerfile. 
+# If you need to change environment variables, see entrypoint.sh
+
+FROM mcr.microsoft.com/dotnet/aspnet:7.0-bullseye-slim AS base
+WORKDIR /app
+EXPOSE 80
+
+FROM mcr.microsoft.com/dotnet/sdk:7.0-bullseye-slim AS build
+ARG TARGETARCH
+WORKDIR /src
+COPY ["nuget.config", "NuGet.Config"]
+COPY ["Amagi.Thumbnail.Api/Amagi.Thumbnail.Api.csproj", "Amagi.Thumbnail.Api/"]
+COPY ["Amagi.Thumbnail.BusinessLayer/Amagi.Thumbnail.BusinessLayer.csproj", "Amagi.Thumbnail.BusinessLayer/"]
+COPY ["Amagi.Thumbnail.DataLayer/Amagi.Thumbnail.DataLayer.csproj", "Amagi.Thumbnail.DataLayer/"]
+RUN dotnet restore "Amagi.Thumbnail.Api/Amagi.Thumbnail.Api.csproj"
+COPY . .
+WORKDIR "/src/Amagi.Thumbnail.Api"
+RUN dotnet build "Amagi.Thumbnail.Api.csproj" -c Release -o /app/build
+
+FROM build AS publish
+RUN dotnet publish "Amagi.Thumbnail.Api.csproj" -c Release -o /app/publish
+
+FROM base AS final
+WORKDIR /app
+COPY --from=publish /app/publish .
+RUN chmod +x entrypoint.sh
+ENTRYPOINT ["/bin/bash", "./entrypoint.sh"]

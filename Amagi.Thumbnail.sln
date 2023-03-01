@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33403.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amagi.Thumbnail.Api", "Amagi.Thumbnail.Api\Amagi.Thumbnail.Api.csproj", "{6A524D68-8FD8-4F8E-9A4C-F1FFFFB31756}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amagi.Thumbnail.BusinessLayer", "Amagi.Thumbnail.BusinessLayer\Amagi.Thumbnail.BusinessLayer.csproj", "{F3D657AC-9518-49C1-AE8F-9F97B9D52A5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amagi.Thumbnail.DataLayer", "Amagi.Thumbnail.DataLayer\Amagi.Thumbnail.DataLayer.csproj", "{533D13FB-D61D-4CBC-93AE-E35E8C3227F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amagi.Thumbnail.Worker", "Amagi.Thumbnail.Worker\Amagi.Thumbnail.Worker.csproj", "{77A4B00B-9657-4F18-97E5-BDD1ADB8AA19}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{84267978-0133-4F7B-9F2F-523E63F54C5F}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6A524D68-8FD8-4F8E-9A4C-F1FFFFB31756}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A524D68-8FD8-4F8E-9A4C-F1FFFFB31756}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A524D68-8FD8-4F8E-9A4C-F1FFFFB31756}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A524D68-8FD8-4F8E-9A4C-F1FFFFB31756}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3D657AC-9518-49C1-AE8F-9F97B9D52A5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3D657AC-9518-49C1-AE8F-9F97B9D52A5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3D657AC-9518-49C1-AE8F-9F97B9D52A5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3D657AC-9518-49C1-AE8F-9F97B9D52A5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{533D13FB-D61D-4CBC-93AE-E35E8C3227F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{533D13FB-D61D-4CBC-93AE-E35E8C3227F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{533D13FB-D61D-4CBC-93AE-E35E8C3227F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{533D13FB-D61D-4CBC-93AE-E35E8C3227F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77A4B00B-9657-4F18-97E5-BDD1ADB8AA19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77A4B00B-9657-4F18-97E5-BDD1ADB8AA19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77A4B00B-9657-4F18-97E5-BDD1ADB8AA19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77A4B00B-9657-4F18-97E5-BDD1ADB8AA19}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {17DC2C8C-5473-4E6B-A07F-85720B2696B2}
+	EndGlobalSection
+EndGlobal

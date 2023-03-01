@@ -1,0 +1,16 @@
+﻿{
+  "ConnectionStrings": {
+    "Default": "Server=localhost;Database=Amagi;Trusted_Connection=True;Encrypt=False;"
+  },
+  "profiles": {
+    "Amagi.Thumbnail.Api": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "http://localhost:7000"
+    }
+  }
+}
